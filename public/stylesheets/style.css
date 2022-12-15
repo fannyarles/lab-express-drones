@@ -1,6 +1,93 @@
-body {
-  padding: 50px;
+* {
+  margin: 0;
+}
+
+html {
+  background-color: #eaeaea;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  background-color: black;
+}
+
+nav a {
+  color: white;
+  text-transform: uppercase;  
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+main {
+  padding: 50px;
+}
+
+#drones {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.drone {
+  width: 20%;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.drone h3 a {
+  display: block;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.drone form {
+  display: inline-block;
+}
+
+input[type=text], input[type=number] {
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+label {
+  margin-top: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+input[type=submit], .drone a.update-btn {
+  background-color: lightskyblue;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 0;
+}
+
+input[type=submit]:hover, .drone a.update-btn:hover {
+  background-color: #00b7ff;
 }
 
 a {
